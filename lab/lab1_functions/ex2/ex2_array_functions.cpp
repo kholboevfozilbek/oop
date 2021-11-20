@@ -7,6 +7,7 @@ void display(int* arr, int n);
 float avg(int* arr, int n);
 int min(int* arr, int n);
 int max(int* arr, int n);
+void reverse(int* arr, int n);
 
 int main()
 {
@@ -26,6 +27,9 @@ int main()
 	cout << "\n\nMin: " << min(arr, n) << endl;
 	cout << "max: " << max(arr, n) << endl;
 	cout << "avgg: " << avg(arr, n) << endl;
+	reverse(arr, n);
+	cout << "\n\nArray is reversed \n";
+	display(arr, n);
 	return 0;
 }
 
@@ -70,5 +74,27 @@ int max(int* arr, int n)
 			maxx = arr[i];
 	return maxx;
 
+}
+
+void reverse(int* arr, int n)
+{
+	if(n % 2 != 0)
+	{
+		for(size_t i=0, j=n-1; i < n/2 && j > n/2; ++i, --j)
+		{
+			int temp = arr[i];
+			arr[i] = arr[j];
+			arr[j] = temp;
+		}
+	}
+	else
+	{
+		for(size_t i=0, j=n-1; i < n/2 && j >= n/2; ++i, --j)
+                {
+                        int temp = arr[i];
+                        arr[i] = arr[j];
+                        arr[j] = temp;
+                }
+	}
 }
 
