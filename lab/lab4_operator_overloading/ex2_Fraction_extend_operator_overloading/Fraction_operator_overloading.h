@@ -1,7 +1,7 @@
 #pragma once
 
-#ifndef FRACTION_H_KNOWN
-#define FRACTION_H_KNOWN
+#ifndef FRACTION_OPERATOR_OVERLOADING_H_KNOWN
+#define FRACTION_OPERATOR_OVERLOADING_H_KNOWN
 #include <iostream>
 #include <stdexcept>
 using namespace std;
