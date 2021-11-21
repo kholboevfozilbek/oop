@@ -14,8 +14,23 @@ int main()
     s.push(5);
 
 
-    cout << "Stack:  ";
+    cout << "\n\nStack:  ";
     s.print();
+    cout << "Size: " << s.size() << endl;
 
+    cout << "\nPop: " << s.pop() << endl;
+    cout << "\nPop: " << s.pop() << endl;
+
+    cout << "\nStack:  ";
+    s.print();
+    cout << "Size: " << s.size() << endl;
+    
+    s.clear();
+    
+    cout << "\nStack:  ";
+    s.print();
+    cout << "Size: " << s.size() << endl;
+
+    puts("\n\n");
     return 0;
 }
