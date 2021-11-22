@@ -47,6 +47,8 @@ class Name
 
     friend ostream& operator<< (ostream& stream, const Name &o);
 
+    Name& operator= (const Name &o);
+
 
 };
 
@@ -67,5 +69,11 @@ ostream& operator<< (ostream& stream, const Name &o)
     return stream;
 }
 
+
+Name& Name::operator= (const Name &o)
+{
+    if(this != &o)
+    return *this;
+}
 
 #endif
